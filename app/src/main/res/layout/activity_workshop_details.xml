@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".workshop_details">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:minHeight="?actionBarSize"
+        android:background="@drawable/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/toolbar1"
+        android:elevation="10dp"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Auto Master"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toTopOf="@+id/toolbar1"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar1"
+        app:layout_constraintLeft_toLeftOf="@id/toolbar1"
+        app:layout_constraintRight_toRightOf="@id/toolbar1"/>
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:elevation="10dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title"
+        app:tint="@color/white" />
+    <ImageView
+        android:id="@+id/cart"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="14dp"
+        android:elevation="10dp"
+        android:src="@drawable/ic_cart"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/title"
+        app:tint="@color/white" />
+
+
+    <ScrollView
+        android:id="@+id/scrolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/workshop_profile"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="-15dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/automaster"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar1" />
+
+
+    <View
+        android:id="@+id/view_of_workshop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="-20dp"
+        android:background="@drawable/workshop_bg"
+        app:layout_constraintTop_toBottomOf="@id/workshop_profile"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/workshop_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Info"
+        android:textColor="#362380"
+        android:layout_marginTop="29dp"
+        android:layout_marginLeft="19dp"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="@id/workshop_profile"
+        app:layout_constraintTop_toTopOf="@+id/view_of_workshop" />
+
+    <TextView
+        android:id="@+id/workshop_info1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Here is the little info about the Auto Master. and some introduction."
+        android:textColor="#6D6C76"
+        android:textSize="13dp"
+        app:layout_constraintLeft_toRightOf="@id/workshop_info"
+        app:layout_constraintStart_toStartOf="@+id/workshop_info"
+        app:layout_constraintTop_toBottomOf="@id/workshop_info" />
+    <TextView
+        android:id="@+id/adress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Adress"
+        android:textColor="#362380"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="19dp"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="@id/workshop_profile"
+        app:layout_constraintTop_toBottomOf="@+id/workshop_info1" />
+
+    <TextView
+        android:id="@+id/adress1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text="Shop # 20 , Gulberg"
+        android:textColor="#6D6C76"
+        android:textSize="13dp"
+        android:layout_marginLeft="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/adress"
+        app:layout_constraintStart_toEndOf="@+id/adress"
+        app:layout_constraintTop_toTopOf="@+id/adress" />
+    <TextView
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="City"
+        android:textColor="#362380"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="@id/adress"
+        app:layout_constraintTop_toBottomOf="@+id/adress" />
+
+    <TextView
+        android:id="@+id/city1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins"
+        android:text=" Lahore"
+        android:textColor="#6D6C76"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@+id/city"
+        app:layout_constraintStart_toStartOf="@+id/adress1"
+        app:layout_constraintTop_toTopOf="@+id/city" />
+
+    <TextView
+        android:id="@+id/our_services"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Our Services"
+        android:textColor="#362380"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="@id/adress"
+        app:layout_constraintTop_toBottomOf="@+id/city" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/our_services_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="@+id/our_services"
+        app:layout_constraintTop_toBottomOf="@+id/our_services"
+        app:layout_constraintEnd_toEndOf="@+id/view_of_workshop"
+        />
+    <TextView
+        android:id="@+id/opeing_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Opening Hours"
+        android:textColor="#362380"
+        android:layout_marginTop="5dp"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="@id/adress"
+        app:layout_constraintTop_toBottomOf="@+id/our_services_recycler_view" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="7dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@+id/view_of_workshop"
+        app:layout_constraintRight_toRightOf="@+id/view_of_workshop"
+        app:layout_constraintTop_toBottomOf="@+id/opeing_hours" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="Monday"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginLeft="28dp"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintLeft_toLeftOf="@+id/view_of_workshop"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="9:00 AM- 5 PM"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginRight="28dp"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintRight_toRightOf="@+id/view_of_workshop"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView"
+        app:layout_constraintTop_toTopOf="@+id/cardView" />
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+
+        app:cardBackgroundColor="#EEFBFF"
+        app:layout_constraintLeft_toLeftOf="@+id/view_of_workshop"
+        app:layout_constraintRight_toRightOf="@+id/view_of_workshop"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="Tuesday"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginLeft="28dp"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintLeft_toLeftOf="@+id/view_of_workshop"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView1"
+        app:layout_constraintTop_toTopOf="@+id/cardView1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="9:00 AM- 5 PM"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginRight="28dp"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintRight_toRightOf="@+id/view_of_workshop"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView1"
+        app:layout_constraintTop_toTopOf="@+id/cardView1" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@+id/view_of_workshop"
+        app:layout_constraintRight_toRightOf="@+id/view_of_workshop"
+        app:layout_constraintTop_toBottomOf="@+id/cardView1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="Wednesday"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginLeft="28dp"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintLeft_toLeftOf="@+id/view_of_workshop"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+        app:layout_constraintTop_toTopOf="@+id/cardView3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="9:00 AM- 5 PM"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginRight="28dp"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintRight_toRightOf="@+id/view_of_workshop"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView3"
+        app:layout_constraintTop_toTopOf="@+id/cardView3" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView4"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+
+        app:cardBackgroundColor="#EEFBFF"
+        app:layout_constraintLeft_toLeftOf="@+id/view_of_workshop"
+        app:layout_constraintRight_toRightOf="@+id/view_of_workshop"
+        app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="Thursday"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginLeft="28dp"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintLeft_toLeftOf="@+id/view_of_workshop"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView4"
+        app:layout_constraintTop_toTopOf="@+id/cardView4" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="9:00 AM- 5 PM"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginRight="28dp"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintRight_toRightOf="@+id/view_of_workshop"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView4"
+        app:layout_constraintTop_toTopOf="@+id/cardView4" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView5"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@+id/view_of_workshop"
+        app:layout_constraintRight_toRightOf="@+id/view_of_workshop"
+        app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="Friday"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginLeft="28dp"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintLeft_toLeftOf="@+id/view_of_workshop"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView5"
+        app:layout_constraintTop_toTopOf="@+id/cardView5" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="9:00 AM- 5 PM"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginRight="28dp"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintRight_toRightOf="@+id/view_of_workshop"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView5"
+        app:layout_constraintTop_toTopOf="@+id/cardView5" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView6"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        app:cardBackgroundColor="#EEFBFF"
+        app:layout_constraintLeft_toLeftOf="@+id/view_of_workshop"
+        app:layout_constraintRight_toRightOf="@+id/view_of_workshop"
+        app:layout_constraintTop_toBottomOf="@+id/cardView5" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="Thursday"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginLeft="28dp"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintLeft_toLeftOf="@+id/view_of_workshop"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView6"
+        app:layout_constraintTop_toTopOf="@+id/cardView6" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="28dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="9:00 AM- 5 PM"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView6"
+        app:layout_constraintRight_toRightOf="@+id/view_of_workshop"
+        app:layout_constraintTop_toTopOf="@+id/cardView6" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView7"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@+id/view_of_workshop"
+        app:layout_constraintRight_toRightOf="@+id/view_of_workshop"
+        app:layout_constraintTop_toBottomOf="@+id/cardView6" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:text="Sunday"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:layout_marginLeft="28dp"
+        android:fontFamily="@font/roboto_medium"
+        app:layout_constraintLeft_toLeftOf="@+id/view_of_workshop"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView7"
+        app:layout_constraintTop_toTopOf="@+id/cardView7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="28dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="close"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cardView7"
+        app:layout_constraintEnd_toEndOf="@+id/textView18"
+        app:layout_constraintRight_toRightOf="@+id/view_of_workshop"
+        app:layout_constraintStart_toStartOf="@+id/textView18"
+        app:layout_constraintTop_toTopOf="@+id/cardView7" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

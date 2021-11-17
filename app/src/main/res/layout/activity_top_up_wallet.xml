@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".TopUp_Wallet">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:minHeight="?actionBarSize"
+        android:background="@drawable/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/toolbar1"
+        android:elevation="10dp"
+        />
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TopUP Wallet"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:elevation="10dp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toTopOf="@+id/toolbar1"
+        app:layout_constraintBottom_toBottomOf="@id/toolbar1"
+        app:layout_constraintLeft_toLeftOf="@id/toolbar1"
+        app:layout_constraintRight_toRightOf="@id/toolbar1"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:elevation="10dp"
+        android:src="@drawable/ic_baseline_arrow_back_24"
+        app:layout_constraintTop_toTopOf="@+id/title"
+        app:layout_constraintBottom_toBottomOf="@id/title"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:tint="@color/white" />
+
+
+    <TextView
+        android:id="@+id/enter_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="13dp"
+        android:fontFamily="@font/poppins"
+        android:text="Enter Amount"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar1" />
+
+    <EditText
+        android:id="@+id/enter_amount1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/white"
+        android:textSize="16dp"
+        android:hint="Enter Your Amount"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_amount" />
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="22dp"
+        android:background="#362380"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enter_amount1" />
+    <Button
+        android:id="@+id/topup_button"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/login_button"
+        android:elevation="5dp"
+        android:fontFamily="@font/sf_pro_display"
+        android:text="Pay From Card"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

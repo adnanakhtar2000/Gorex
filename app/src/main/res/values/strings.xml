@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Gorex</string>
+    <string name="google_maps_key">AIzaSyDXCz81HtOnMzaVtGi7ysEzwRea3EFCcZI</string>
+
+    <string-array name="Vehicle_Type">
+        <item>MahindraThar</item>
+        <item>Toyota</item>
+        <item>Honda</item>
+        <item>Hyundai</item>
+        <item>BMW</item>
+        <item>AuDi</item>
+        <item>Mercedes</item>
+        <item>Jeep</item>
+        <item>KIA</item>
+        <item>MG</item>
+        <item>Suzuki</item>
+        <item>Range Rover</item>
+        <item>Rolls Royce</item>
+        <item>Lexus</item>
+        <item>Ford</item>
+        <item>ChanGan</item>
+        <item>Ferrari</item>
+        <item>Hummer</item>
+        <item>Nissan</item>
+    </string-array>
+
+    <string-array name="vehicle_types1">
+        <item>Sport Utility vehicle(SUV)</item>
+        <item>SEDAN</item>
+        <item>Couple</item>
+        <item>Sports Car</item>
+        <item>Station Wegon</item>
+        <item>HatchBack</item>
+        <item>Convertible</item>
+        <item>MiniVan</item>
+        <item>PickUp Truck</item>
+    </string-array>
+
+
+    <string-array name="language">
+        <item>English (UK)</item>
+        <item>English (US)</item>
+        <item>URDU</item>
+        <item>Arabic</item>
+
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="here_is_the">
+
+Here is the little info about the Auto Master.\nand some introduction.
+</string>
+
+</resources>

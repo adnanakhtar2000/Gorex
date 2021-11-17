@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gorex">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Gorex">
+        <activity
+            android:name=".Product_and_Services"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".workshop_details"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Add_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Topup_Wallet1"
+            android:exported="true" />
+        <activity
+            android:name=".TopUp_Wallet"
+            android:exported="true" />
+        <activity
+            android:name=".My_Vehicle"
+            android:exported="true" />
+        <activity
+            android:name="payment_history_fragment.Payment_History"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".Order_History"
+            android:exported="true" >
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Vechiles_Details"
+            android:exported="true" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <activity
+            android:name=".Login"
+            android:exported="true" />
+        <activity
+            android:name=".Navigation"
+            android:exported="true" />
+        <activity
+            android:name=".OTP_verfication"
+            android:exported="true" />
+        <activity
+            android:name=".Sign_up"
+            android:exported="true" />
+        <activity
+            android:name=".Splash2"
+            android:exported="true" />
+        <activity
+            android:name=".Splash_screen"
+            android:exported="true"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

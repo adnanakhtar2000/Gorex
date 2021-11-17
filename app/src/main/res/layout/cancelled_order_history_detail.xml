@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/order_background"
+    android:layout_marginLeft="14dp"
+    android:elevation="20dp"
+
+    android:layout_marginRight="14dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:layout_height="241dp">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:background="@drawable/bg1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Number"
+        android:textSize="16dp"
+        android:layout_marginLeft="10dp"
+
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toTopOf="@id/view"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/order_number_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A5409009801"
+        android:textSize="16dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toTopOf="@id/view"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="13dp"
+        android:text="Service Provider"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+    <TextView
+        android:id="@+id/service_provider_name_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="13dp"
+        android:text="AutoMaster"
+        android:textColor="#BCADAD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="44dp"
+        android:text="Order Status"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="44dp"
+        android:text="Cancelled"
+        android:textColor="#FF0606"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="73dp"
+        android:text="Payment Method"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+    <TextView
+        android:id="@+id/payment_method_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="73dp"
+        android:text="Cash"
+        android:textColor="#BCADAD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="104dp"
+        android:text="Service"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+
+    <TextView
+        android:id="@+id/servic_name_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="104dp"
+        android:text="Engine Oil"
+        android:textColor="#BCADAD"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display"
+        android:textStyle="bold"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="134dp"
+        android:text="Payment"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+    <TextView
+        android:id="@+id/payment_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="134dp"
+        android:text="500 SR"
+        android:textColor="#BCADAD"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+
+    <TextView
+        android:id="@+id/date_time_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_display"
+        android:textStyle="bold"
+        android:textSize="14dp"
+        android:layout_marginTop="167dp"
+        android:text="10 / 21 / 2021 , 03 : 30 PM"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+</androidx.constraintlayout.widget.ConstraintLayout>

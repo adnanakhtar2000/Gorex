@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    
+    android:id="@+id/drawer_layout"
+    android:layout_height="match_parent"
+    android:background="@color/teal_200"
+    tools:context=".Navigation">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:minHeight="?actionBarSize"
+        android:background="@drawable/toolbar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/toolbar1"
+        android:elevation="10dp"
+        />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circle_view"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="#514BC3"
+            android:elevation="11dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginRight="326dp"
+            app:layout_constraintTop_toTopOf="@+id/toolbar1"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar1"
+            app:layout_constraintLeft_toLeftOf="@+id/toolbar1"
+            app:layout_constraintRight_toRightOf="@+id/toolbar1"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:elevation="11dp"
+            android:src="@drawable/ic_menu_5_line"
+            app:layout_constraintBottom_toBottomOf="@+id/circle_view"
+            app:layout_constraintEnd_toEndOf="@+id/circle_view"
+            app:layout_constraintStart_toStartOf="@+id/circle_view"
+            app:layout_constraintTop_toTopOf="@+id/circle_view" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="11dp"
+            android:src="@drawable/ic_gorex_logo"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbar1"
+            app:layout_constraintLeft_toLeftOf="@+id/toolbar1"
+            app:layout_constraintRight_toRightOf="@+id/toolbar1"
+            app:layout_constraintTop_toTopOf="@+id/toolbar1" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar1"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:id="@+id/container"/>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="129dp"
+            android:background="@drawable/bottom"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layoutDirection="rtl"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+    
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="86dp"
+            android:layout_marginBottom="18dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Provide Service at My Location"
+            android:textColor="@color/black"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintLeft_toLeftOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="21dp"
+            android:layout_marginTop="86dp"
+           app:trackTint="#362380"
+            android:elevation="30dp"
+            app:thumbTint="@color/white"
+            android:trackTint="#362380"
+            android:layout_marginBottom="19dp"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintRight_toRightOf="@+id/view"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:menu="@menu/drawer_navigation"
+        android:fitsSystemWindows="true"
+        android:layout_gravity="start"
+        app:itemTextColor="@color/black"
+        android:background="@color/white"
+        app:itemIconTint="#362380"
+
+        app:headerLayout="@layout/header"/>
+
+</androidx.drawerlayout.widget.DrawerLayout>

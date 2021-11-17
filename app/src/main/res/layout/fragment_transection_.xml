@@ -1,0 +1,35 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="payment_history_fragment.Transection_Fragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/transection_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+    <ImageView
+        android:id="@+id/filter_image"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="24dp"
+        android:src="@drawable/ic_filter_icon"
+
+        android:padding="11dp"
+         android:background="@drawable/filter_button_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="34dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="15dp"
+
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/workshop_srvice_logo"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+
+        android:src="@drawable/ic_noun_car_battery_2082376"
+        />
+
+    <TextView
+
+        android:id="@+id/workshop_service_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Battery"
+        android:gravity="center_vertical"
+       android:layout_marginLeft="5dp"
+        android:layout_gravity="center_vertical"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:fontFamily="@font/poppins_medium"
+         />
+</LinearLayout>

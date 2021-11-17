@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="14dp"
+    android:layout_marginRight="14dp"
+    android:layout_marginTop="10dp"
+    android:elevation="10dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white">
+    <ImageView
+        android:id="@+id/vehicle_type_images"
+        android:layout_width="54dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginBottom="83dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="289dp"
+        android:src="@drawable/toyota"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Toyota"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@id/vehicle_type_images"
+        app:layout_constraintLeft_toRightOf="@+id/vehicle_type_images"
+        app:layout_constraintTop_toTopOf="@id/vehicle_type_images" />
+
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="27dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="248dp"
+        android:text="Make Primary"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:textAllCaps="false"
+        android:gravity="center"
+        android:background="@drawable/primary_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/vehicle_type_images"
+        app:layout_constraintBottom_toBottomOf="@id/vehicle_type_images"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Year"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="Corolla"
+        android:textColor="#404040"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintStart_toEndOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Brand"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/vehicle_type_images"
+        app:layout_constraintTop_toBottomOf="@+id/vehicle_type_images" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2015"
+        android:textColor="#404040"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView11"
+        app:layout_constraintStart_toStartOf="@+id/textView12"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+
+    <TextView
+        android:id="@+id/type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Type"
+        android:textColor="@color/black"
+        android:layout_marginLeft="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView11"
+        app:layout_constraintStart_toEndOf="@+id/textView12"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Number"
+        android:textColor="@color/black"
+        app:layout_constraintStart_toStartOf="@+id/type"
+        app:layout_constraintTop_toBottomOf="@+id/type" />
+
+
+    <TextView
+        android:id="@+id/model_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUV"
+        android:textColor="#404040"
+        android:textSize="11dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/type"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toTopOf="@+id/type" />
+
+    <TextView
+   android:id="@+id/vehicle_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="UY90009876"
+        android:textColor="#404040"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView15"
+        app:layout_constraintStart_toEndOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/type" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
