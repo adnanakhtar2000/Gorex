@@ -39,6 +39,7 @@
         <entry key="..\:/Gorex2/app/src/main/res/drawable/order_background.xml" value="0.124" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/picker.xml" value="0.115" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/primary_button.xml" value="0.1" />
+        <entry key="..\:/Gorex2/app/src/main/res/drawable/searchbar_bg.xml" value="0.141" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/sign_in_fb.xml" value="0.1315" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/tab_background.xml" value="0.124" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/tab_selector.xml" value="0.124" />
@@ -56,7 +57,7 @@
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_order_history.xml" value="0.33" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_otp_verfication.xml" value="0.22" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_payment_history.xml" value="0.16041666666666668" />
-        <entry key="..\:/Gorex2/app/src/main/res/layout/activity_product_and_services.xml" value="0.1" />
+        <entry key="..\:/Gorex2/app/src/main/res/layout/activity_product_and_services.xml" value="0.22" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_splash2.xml" value="0.34400948991696323" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
@@ -71,6 +72,8 @@
         <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_completed_order_.xml" value="0.11302083333333333" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_google_map.xml" value="0.125" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_in_complete__order_.xml" value="0.11302083333333333" />
+        <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_product_.xml" value="0.33" />
+        <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_services_.xml" value="0.13072916666666667" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_transection_.xml" value="0.14635416666666667" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_wallet_.xml" value="0.16041666666666668" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/header.xml" value="0.25" />
