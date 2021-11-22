@@ -14,15 +14,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Gorex">
         <activity
+            android:name=".Conragulation_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".Order_confirm_Activity"
+            android:exported="true" />
+        <activity
             android:name=".Product_and_Services"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".workshop_details"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Add_Activity"
             android:exported="true" />
@@ -37,14 +39,10 @@
             android:exported="true" />
         <activity
             android:name="payment_history_fragment.Payment_History"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Order_History"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
