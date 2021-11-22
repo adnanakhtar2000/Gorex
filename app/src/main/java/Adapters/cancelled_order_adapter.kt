@@ -23,6 +23,8 @@ class cancalled_order_adapter(val sp_name_c : List<String> , val payment_method_
         holder.service_name.text = service_name_c[position]
         holder.payment.text = payment_c[position]
         holder.date_time.text = date_time_c[position]
+
+        
     }
 
     override fun getItemCount(): Int {

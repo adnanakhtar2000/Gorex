@@ -20,6 +20,7 @@
         <entry key="..\:/Gorex2/app/src/main/res/drawable/button3.xml" value="0.116" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/button31.xml" value="0.1" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/button_selector.xml" value="0.1485" />
+        <entry key="..\:/Gorex2/app/src/main/res/drawable/car_wash_services_bg.xml" value="0.1335" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/dialuge_box_bg.xml" value="0.159" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/filter_button_bg.xml" value="0.115" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/fuel_refill_selector.xml" value="0.148" />
@@ -31,9 +32,11 @@
         <entry key="..\:/Gorex2/app/src/main/res/drawable/ic_home.xml" value="0.148" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/ic_login.xml" value="0.148" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/ic_message_circle_lines.xml" value="0.148" />
+        <entry key="..\:/Gorex2/app/src/main/res/drawable/ic_minussvg.xml" value="0.1335" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/ic_my_vehicles.xml" value="0.148" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/ic_noun_car_transmission_1563498.xml" value="0.1485" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/ic_noun_engine_oil_1979324.xml" value="0.1485" />
+        <entry key="..\:/Gorex2/app/src/main/res/drawable/ic_plus_svg.xml" value="0.1335" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/ic_warning_circle.xml" value="0.148" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/login_button.xml" value="0.1315" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/order_background.xml" value="0.124" />
@@ -73,19 +76,24 @@
         <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_google_map.xml" value="0.125" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_in_complete__order_.xml" value="0.11302083333333333" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_product_.xml" value="0.33" />
+        <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_product__detail_.xml" value="0.14" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_services_.xml" value="0.13072916666666667" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_transection_.xml" value="0.14635416666666667" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_wallet_.xml" value="0.16041666666666668" />
+        <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_wash_service__type_.xml" value="0.12291666666666666" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/header.xml" value="0.25" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/my_vehicle_design.xml" value="0.33" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/order_type_item_view.xml" value="0.18854166666666666" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/orderhistory_table.xml" value="0.31946508172362553" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/our_services_layout.xml" value="0.22" />
+        <entry key="..\:/Gorex2/app/src/main/res/layout/products_screen_layout.xml" value="0.22" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/selected_dropdown.xml" value="0.153125" />
+        <entry key="..\:/Gorex2/app/src/main/res/layout/services_screen_layout.xml" value="0.512630014858841" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/slider.xml" value="0.25" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/transection_layout.xml" value="0.34880636604774534" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/uncomplete_order_histor_table.xml" value="0.1125" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/uncomplete_order_history_detail.xml" value="0.1125" />
+        <entry key="..\:/Gorex2/app/src/main/res/layout/wash_service_screen_layout.xml" value="0.25" />
         <entry key="..\:/Gorex2/app/src/main/res/menu/drawer_navigation.xml" value="0.16041666666666668" />
         <entry key="..\:/Gorex2/app/src/main/res/mipmap-anydpi-v26/ic_launcher1.xml" value="0.13" />
       </map>
