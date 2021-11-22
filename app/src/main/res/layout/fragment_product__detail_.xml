@@ -1,0 +1,146 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="Product_And_Services_Fragment.Product_Detail_Fragment">
+
+    <ImageView
+        android:id="@+id/product_detail_image1"
+        android:layout_width="101dp"
+        android:layout_height="101dp"
+        android:layout_marginRight="91dp"
+        android:src="@drawable/wheel1"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/product_detail_image3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/product_detail_image2"
+        android:layout_width="101dp"
+        android:layout_height="101dp"
+        android:layout_marginLeft="79dp"
+        android:src="@drawable/wheel1"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/product_detail_image3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/product_detail_image3"
+        android:layout_width="101dp"
+        android:layout_height="101dp"
+        android:src="@drawable/wheel1"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/product_detail_image1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/product_detail_image2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="11dp"
+        android:fontFamily="@font/roboto_medium"
+        android:text="Pirelli Cinturato P7"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_detail_image3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_medium"
+        android:text="425 SR"
+        android:layout_marginRight="38dp"
+        android:textStyle="bold"
+        android:textColor="#4AD594"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+    <TextView
+        android:id="@+id/product_discription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="5dp"
+        android:text="Here is the little info about the Auto Master.
+and some introduction."
+        android:textColor="@color/black"
+        android:textSize="13dp"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginRight="31dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/textView19"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <ImageView
+        android:id="@+id/product_minus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="118dp"
+        android:layout_marginRight="227dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_discription"
+        app:srcCompat="@drawable/ic_minussvg"
+        tools:ignore="VectorDrawableCompat" />
+    <ImageView
+        android:id="@+id/product_plus"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="227dp"
+        android:layout_marginRight="118dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_discription"
+        app:srcCompat="@drawable/ic_plus_svg"
+        tools:ignore="VectorDrawableCompat"
+        app:tint="#4AD594" />
+
+    <TextView
+        android:id="@+id/product_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="2"
+        android:textSize="32dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/product_minus"
+        app:layout_constraintEnd_toStartOf="@+id/product_plus"
+        app:layout_constraintStart_toEndOf="@+id/product_minus"
+        app:layout_constraintTop_toTopOf="@+id/product_minus" />
+
+    <Button
+        android:id="@+id/signin_email"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="22dp"
+        android:background="@drawable/sign_in_email"
+        android:text="Add to Cart"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/product_count" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
