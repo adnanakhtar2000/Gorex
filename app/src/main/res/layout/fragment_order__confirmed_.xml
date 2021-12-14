@@ -501,7 +501,7 @@
                 android:layout_marginTop="11dp"
                 app:layout_constraintLeft_toLeftOf="@id/parent2"
                 app:layout_constraintRight_toRightOf="@id/parent2"
-                app:layout_constraintTop_toBottomOf="@id/services"/>
+                app:layout_constraintTop_toBottomOf="@id/part"/>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

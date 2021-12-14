@@ -1,14 +1,19 @@
 package Adapters
 
+import Interfaces.cellclicklistner
+import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.recyclerview.widget.RecyclerView
+import com.example.gorex.Product_and_Services
 import com.example.gorex.R
 
-class Workshop_services_Adapter(val service_logo : List<Int> , val service_name : List<String>) : RecyclerView.Adapter<workshop_services_viewholder>() {
+class Workshop_services_Adapter(val cellclicklistner: cellclicklistner ,val context: Context ,val service_logo : List<Int> , val service_name : List<String>) : RecyclerView.Adapter<workshop_services_viewholder>() {
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -21,6 +26,10 @@ class Workshop_services_Adapter(val service_logo : List<Int> , val service_name 
     override fun onBindViewHolder(holder: workshop_services_viewholder, position: Int) {
        holder.service_logo.setImageResource(service_logo[position])
         holder.service_name.text= service_name[position]
+
+        holder.service_name.setOnClickListener {
+            cellclicklistner.onCellClickListener()
+        }
     }
 
     override fun getItemCount(): Int {

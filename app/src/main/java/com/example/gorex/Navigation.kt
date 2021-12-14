@@ -82,6 +82,21 @@ navigationBinding.navView.setNavigationItemSelectedListener{
             startActivity(intent2)
             overridePendingTransition(0,0)
         }
+        R.id.left_setting ->{
+        val intent3 = Intent(applicationContext, Setting::class.java)
+            startActivity(intent3)
+            overridePendingTransition(0,0)
+        }
+        R.id.left_contact_us ->{
+            val intent3 = Intent(applicationContext, Contact_Us::class.java)
+            startActivity(intent3)
+            overridePendingTransition(0,0)
+        }
+        R.id.left_about ->{
+            val intent3 = Intent(applicationContext, About::class.java)
+            startActivity(intent3)
+            overridePendingTransition(0,0)
+        }
 
     }
 
@@ -89,39 +104,4 @@ navigationBinding.navView.setNavigationItemSelectedListener{
     return@setNavigationItemSelectedListener true
     }
 }
-
-
 }
-
-
-
-
-
-
-
-
-
-/*
- fun onNavigationItemSelected(item: MenuItem): Boolean {
-            when (item.itemId) {
-
-                R.id.left_order_history -> {
-
-                    val intent = Intent(applicationContext, Order_History::class.java)
-
-                }
-
-                R.id.left_paymetn_history -> {
-
-                    val intent = Intent(applicationContext, Payment_History::class.java)
-                }
-                R.id.left_my_vehicle -> {
-                    val intent = Intent(applicationContext, My_Vehicle::class.java)
-                }
-
-            }
-            startActivity(intent)
-            navigationBinding.drawerLayout.closeDrawer(GravityCompat.START)
-            return true
-        }
- */

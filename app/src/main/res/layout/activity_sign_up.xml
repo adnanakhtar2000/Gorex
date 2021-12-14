@@ -323,7 +323,7 @@
                 app:passwordToggleTint="#B5BBC9">
 
                 <EditText
-
+                    android:id="@+id/signup_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
@@ -380,7 +380,7 @@
                 app:passwordToggleTint="#B5BBC9">
 
                 <EditText
-
+android:id="@+id/confirm_signup_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white"

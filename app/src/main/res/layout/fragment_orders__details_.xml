@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    tools:context=".Orders_Details_Fragment">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/order_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp"
+
+        android:background="@color/white"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/parent2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            >
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:background="@drawable/bg1"
+                android:elevation="5dp"
+                app:layout_constraintStart_toStartOf="@+id/parent2"
+                app:layout_constraintEnd_toEndOf="@id/parent2"
+                app:layout_constraintTop_toTopOf="@id/parent2"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Order Number"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                app:layout_constraintTop_toTopOf="@id/view"
+                app:layout_constraintBottom_toBottomOf="@id/view"
+                app:layout_constraintStart_toStartOf="@id/view"
+                app:layout_constraintEnd_toEndOf="@id/view" />
+
+
+            <TextView
+                android:id="@+id/order_details1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="5dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Order Details"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:layout_marginTop="13dp"
+                app:layout_constraintTop_toBottomOf="@id/view"
+                app:layout_constraintStart_toStartOf="@id/parent2"
+                app:layout_constraintEnd_toEndOf="@id/parent2" />
+            <TextView
+                android:id="@+id/part"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Parts"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textStyle="bold"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintTop_toBottomOf="@id/order_details1"
+                app:layout_constraintLeft_toLeftOf="@id/parent2"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/order_details_part_recylerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                app:layout_constraintLeft_toLeftOf="@id/parent2"
+                app:layout_constraintRight_toRightOf="@id/parent2"
+                app:layout_constraintTop_toBottomOf="@id/part"/>
+
+            <TextView
+                android:id="@+id/services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Services"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:fontFamily="@font/poppins_medium"
+                android:textStyle="bold"
+                android:layout_marginTop="13dp"
+                android:layout_marginLeft="30dp"
+                app:layout_constraintTop_toBottomOf="@id/order_details_part_recylerview"
+                app:layout_constraintLeft_toLeftOf="@id/parent2"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/services_details_part_recylerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                app:layout_constraintLeft_toLeftOf="@id/parent2"
+                app:layout_constraintRight_toRightOf="@id/parent2"
+                app:layout_constraintTop_toBottomOf="@id/services"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/notes"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:hint="Add Notes"
+        android:textColorHint="@color/black"
+        android:padding="10dp"
+        android:gravity="start"
+        android:alpha="0.5"
+        android:textSize="16dp"
+        android:fontFamily="@font/poppins"
+
+        android:background="@drawable/order_detail_notes"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/order_details"
+        app:layout_constraintTop_toBottomOf="@id/order_details" />
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/payment_method"
+    android:layout_width="match_parent"
+    android:layout_height="214dp"
+    android:layout_marginLeft="14dp"
+    android:layout_marginRight="14dp"
+    android:layout_marginTop="7dp"
+    app:cardCornerRadius="10dp"
+   app:cardBackgroundColor="@color/white"
+    app:layout_constraintTop_toBottomOf="@id/notes"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent">
+
+
+</androidx.cardview.widget.CardView>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:background="@drawable/bg1"
+        android:elevation="5dp"
+        app:layout_constraintStart_toStartOf="@+id/payment_method"
+        app:layout_constraintEnd_toEndOf="@id/payment_method"
+        app:layout_constraintTop_toTopOf="@id/payment_method"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="5dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Payment Method"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        app:layout_constraintTop_toTopOf="@id/view1"
+        app:layout_constraintBottom_toBottomOf="@id/view1"
+        app:layout_constraintStart_toStartOf="@id/view1"
+        app:layout_constraintEnd_toEndOf="@id/view1" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="15dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintTop_toBottomOf="@id/view1"
+        app:layout_constraintLeft_toLeftOf="@id/payment_method">
+
+    <RadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:elevation="10dp"
+        android:textSize="14dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textStyle="bold"
+        android:buttonTint="@color/black"
+        android:text="Cash" />
+
+    <RadioButton
+        android:id="@+id/radioButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Card"
+        android:fontFamily="@font/roboto_medium"
+        android:textStyle="bold"
+        android:elevation="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:buttonTint="@color/black"
+        android:textSize="14dp"/>
+
+    <RadioButton
+        android:id="@+id/radioButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:textSize="14dp"
+        android:fontFamily="@font/roboto_medium"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:buttonTint="@color/black"
+        android:text="Wallet" /></RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

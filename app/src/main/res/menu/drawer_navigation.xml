@@ -3,11 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <item android:title="About Gorex" android:icon="@drawable/ic_warning_circle" />
+    <item android:title="About Gorex" android:icon="@drawable/ic_warning_circle" android:id="@+id/left_about" />
     <item android:title="My Orders History" android:icon="@drawable/ic_document_check"  android:id="@+id/left_order_history" />
     <item android:title="Payment History" android:icon="@drawable/ic_calendar_clock" android:id="@+id/left_paymetn_history" />
     <item android:title="My Vehicles" android:icon="@drawable/ic_baseline_directions_car_24" android:id="@+id/left_my_vehicle"/>
-    <item android:title="Contact Us" android:icon="@drawable/ic_message_circle_lines"/>
-    <item android:title="Settings" android:icon="@drawable/ic_settings" />
+    <item android:title="Contact Us" android:icon="@drawable/ic_message_circle_lines" android:id="@+id/left_contact_us"/>
+    <item android:title="Settings" android:icon="@drawable/ic_settings" android:id="@+id/left_setting" />
     <item android:title="Logout" android:icon="@drawable/ic_login" />
 </menu>

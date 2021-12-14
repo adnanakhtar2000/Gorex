@@ -1,11 +1,13 @@
 package com.example.gorex
 
 import Adapters.Product_and_services_tab_Adapter
+import Interfaces.cellclicklistner
 import Product_And_Services_Fragment.Product_Fragment
 import Product_And_Services_Fragment.Services_Fragment
 import Product_And_Services_Fragment.Wash_service_Type_Fragment
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.gorex.databinding.ActivityProductAndServicesBinding
 
 class Product_and_Services : AppCompatActivity() {
@@ -21,8 +23,10 @@ class Product_and_Services : AppCompatActivity() {
 
         val productAndServicesTabAdapter = Product_and_services_tab_Adapter(supportFragmentManager)
         productAndServicesTabAdapter.addfragments(Product_Fragment() , "Product")
-        productAndServicesTabAdapter.addfragments(Wash_service_Type_Fragment(), "Services")
+        productAndServicesTabAdapter.addfragments(Services_Fragment(), "Services")
         viewPager.adapter=productAndServicesTabAdapter
         tabLayout.setupWithViewPager(viewPager)
     }
+
+
 }

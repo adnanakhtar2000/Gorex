@@ -38,9 +38,11 @@
         <entry key="..\:/Gorex2/app/src/main/res/drawable/ic_noun_car_transmission_1563498.xml" value="0.1485" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/ic_noun_engine_oil_1979324.xml" value="0.1485" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/ic_plus_svg.xml" value="0.1335" />
+        <entry key="..\:/Gorex2/app/src/main/res/drawable/ic_shape.xml" value="0.1385" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/ic_warning_circle.xml" value="0.148" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/login_button.xml" value="0.1315" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/order_background.xml" value="0.124" />
+        <entry key="..\:/Gorex2/app/src/main/res/drawable/order_detail_notes.xml" value="0.136" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/picker.xml" value="0.115" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/primary_button.xml" value="0.1" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/searchbar_bg.xml" value="0.141" />
@@ -52,18 +54,24 @@
         <entry key="..\:/Gorex2/app/src/main/res/drawable/transection_layout_bg.xml" value="0.115" />
         <entry key="..\:/Gorex2/app/src/main/res/drawable/wizard.xml" value="0.12" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/Cancelled_order_history_detail.xml" value="0.1125" />
+        <entry key="..\:/Gorex2/app/src/main/res/layout/activity_about.xml" value="0.22" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_add.xml" value="0.10364583333333334" />
+        <entry key="..\:/Gorex2/app/src/main/res/layout/activity_change_password.xml" value="0.20416666666666666" />
+        <entry key="..\:/Gorex2/app/src/main/res/layout/activity_change_profile.xml" value="0.25" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_conragulation.xml" value="0.14" />
+        <entry key="..\:/Gorex2/app/src/main/res/layout/activity_contact_us.xml" value="0.16" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_my_vehicle.xml" value="0.16" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_navigation.xml" value="0.22" />
+        <entry key="..\:/Gorex2/app/src/main/res/layout/activity_notifications_setting.xml" value="0.1671875" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_onboarding_screen.xml" value="0.12291666666666666" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_order_confirm.xml" value="0.33" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_order_history.xml" value="0.33" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_otp_verfication.xml" value="0.22" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_payment_history.xml" value="0.16041666666666668" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_product_and_services.xml" value="0.22" />
+        <entry key="..\:/Gorex2/app/src/main/res/layout/activity_setting.xml" value="0.20416666666666666" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_sign_up.xml" value="0.25" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_splash2.xml" value="0.34400948991696323" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/activity_splash_screen.xml" value="0.33" />
@@ -79,8 +87,9 @@
         <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_google_map.xml" value="0.125" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_in_complete__order_.xml" value="0.11302083333333333" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_order__confirmed_.xml" value="0.3069852941176471" />
+        <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_orders__details_.xml" value="0.21" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_product_.xml" value="0.33" />
-        <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_product__detail_.xml" value="0.14" />
+        <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_product__detail_.xml" value="0.25" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_services_.xml" value="0.13072916666666667" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_transection_.xml" value="0.14635416666666667" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/fragment_wallet_.xml" value="0.16041666666666668" />
@@ -90,6 +99,7 @@
         <entry key="..\:/Gorex2/app/src/main/res/layout/order_type_item_view.xml" value="0.18854166666666666" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/orderhistory_table.xml" value="0.31946508172362553" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/our_services_layout.xml" value="0.22" />
+        <entry key="..\:/Gorex2/app/src/main/res/layout/parts_recycler_screen.xml" value="0.33" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/products_screen_layout.xml" value="0.22" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/selected_dropdown.xml" value="0.153125" />
         <entry key="..\:/Gorex2/app/src/main/res/layout/services_screen_layout.xml" value="0.512630014858841" />
