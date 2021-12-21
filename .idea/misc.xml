@@ -110,6 +110,11 @@
         <entry key="..\:/Gorex2/app/src/main/res/layout/wash_service_screen_layout.xml" value="0.25" />
         <entry key="..\:/Gorex2/app/src/main/res/menu/drawer_navigation.xml" value="0.16041666666666668" />
         <entry key="..\:/Gorex2/app/src/main/res/mipmap-anydpi-v26/ic_launcher1.xml" value="0.13" />
+        <entry key="app/src/main/res/drawable/fuel_refill_selector.xml" value="0.28229166666666666" />
+        <entry key="app/src/main/res/layout/activity_about.xml" value="0.17753623188405798" />
+        <entry key="app/src/main/res/layout/activity_add.xml" value="0.17753623188405798" />
+        <entry key="app/src/main/res/layout/activity_login.xml" value="0.17753623188405798" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.17753623188405798" />
       </map>
     </option>
   </component>

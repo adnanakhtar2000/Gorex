@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/white"
-    tools:context="Product_And_Services_Fragment.Services_Fragment">
+    tools:context="com.example.gorex.Product_And_Services_Fragment.Services_Fragment">
 
     <com.mancj.materialsearchbar.MaterialSearchBar
         android:id="@+id/service_searchbar"

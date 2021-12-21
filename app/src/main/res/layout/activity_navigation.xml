@@ -7,7 +7,7 @@
     android:id="@+id/drawer_layout"
     android:layout_height="match_parent"
     android:background="@color/teal_200"
-    tools:context=".Navigation">
+    tools:context=".activity.Navigation">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

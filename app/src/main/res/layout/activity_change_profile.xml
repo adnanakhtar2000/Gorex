@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".Change_profile">
+    tools:context=".activity.Change_profile">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"

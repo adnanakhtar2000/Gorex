@@ -18,52 +18,52 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Gorex">
         <activity
-            android:name=".About"
+            android:name=".activity.About"
             android:exported="false" />
         <activity
-            android:name=".Contact_Us"
+            android:name=".activity.Contact_Us"
             android:exported="false" />
         <activity
-            android:name=".Notifications_Setting"
+            android:name=".activity.Notifications_Setting"
             android:exported="false" />
         <activity
-            android:name=".Change_profile"
+            android:name=".activity.Change_profile"
             android:exported="false" />
         <activity
-            android:name=".Change_password"
+            android:name=".activity.Change_password"
             android:exported="true" />
         <activity
-            android:name=".Setting"
+            android:name=".activity.Setting"
             android:exported="true" />
         <activity
-            android:name=".Conragulation_Activity"
+            android:name=".activity.Conragulation_Activity"
             android:exported="true" />
         <activity
-            android:name=".Order_confirm_Activity"
+            android:name=".activity.Order_confirm_Activity"
             android:exported="true" />
         <activity
-            android:name=".Product_and_Services"
+            android:name=".activity.Product_and_Services"
             android:exported="true" />
         <activity
-            android:name=".workshop_details"
+            android:name=".activity.workshop_details"
             android:exported="true" />
         <activity
-            android:name=".Add_Activity"
+            android:name=".activity.Add_Activity"
             android:exported="true" />
         <activity
-            android:name=".Topup_Wallet1"
+            android:name=".activity.Topup_Wallet1"
             android:exported="true" />
         <activity
-            android:name=".TopUp_Wallet"
+            android:name=".activity.TopUp_Wallet"
             android:exported="true" />
         <activity
-            android:name=".My_Vehicle"
+            android:name=".activity.My_Vehicle"
             android:exported="true" />
         <activity
-            android:name="payment_history_fragment.Payment_History"
+            android:name="com.example.gorex.payment_history_fragment.Payment_History"
             android:exported="true" />
         <activity
-            android:name=".Order_History"
+            android:name=".activity.Order_History"
             android:exported="true" />
 
         <meta-data
@@ -71,7 +71,7 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".Vechiles_Details"
+            android:name=".activity.Vechiles_Details"
             android:exported="true" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
@@ -85,22 +85,22 @@
              "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
         -->
         <activity
-            android:name=".Login"
+            android:name=".activity.Login"
             android:exported="true" />
         <activity
-            android:name=".Navigation"
+            android:name=".activity.Navigation"
             android:exported="true" />
         <activity
-            android:name=".OTP_verfication"
+            android:name=".activity.OTP_verfication"
             android:exported="true" />
         <activity
-            android:name=".Sign_up"
+            android:name=".activity.Sign_up"
             android:exported="true" />
         <activity
-            android:name=".Splash2"
+            android:name=".activity.Splash2"
             android:exported="true" />
         <activity
-            android:name=".Splash_screen"
+            android:name=".activity.Splash_screen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -109,7 +109,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name=".activity.MainActivity"
             android:exported="true" />
 
         <meta-data

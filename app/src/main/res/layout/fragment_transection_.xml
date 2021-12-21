@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context="payment_history_fragment.Transection_Fragment">
+    tools:context="com.example.gorex.payment_history_fragment.Transection_Fragment">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/transection_recycler_view"

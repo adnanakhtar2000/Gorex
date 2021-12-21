@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="@color/white"
     android:layout_height="match_parent"
-    tools:context=".Order_History">
+    tools:context=".activity.Order_History">
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:layout_height="74dp"

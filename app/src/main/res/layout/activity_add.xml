@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".Add_Activity">
+    tools:context=".activity.Add_Activity">
 
     <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TopUP Wallet"
+        android:text="@string/topup_wallet"
         android:textColor="@color/white"
         android:textSize="18dp"
         android:elevation="10dp"
