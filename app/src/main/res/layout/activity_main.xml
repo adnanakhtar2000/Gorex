@@ -80,7 +80,7 @@
                 android:layout_marginRight="32dp"
                 android:background="@color/white"
                 android:hint="Enter Your Mobile Number"
-                android:inputType="phone"
+                android:inputType="textEmailAddress"
                 android:textColor="@color/black"
                 android:textColorHint="@color/hint_color"
                 app:layout_constraintLeft_toLeftOf="parent"

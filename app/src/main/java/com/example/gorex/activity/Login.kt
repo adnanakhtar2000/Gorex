@@ -30,7 +30,7 @@ class Login : AppCompatActivity() {
                     if(response?.body() != null && response.body()!!.data != null)
                     {
 
-                        CommonFunction.saveToken(applicationContext, response.body()!!.data.get(0).token)
+                        CommonFunction.saveToken(applicationContext, response.body()!!.data.get(0).Token)
                        // CommonFunction.saveName(applicationContext, response.body()!!.data.first_name+" "+response.body()!!.data.last_name)
 
                         overridePendingTransition(0,0)

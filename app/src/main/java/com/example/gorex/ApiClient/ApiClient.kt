@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 class ApiClient {
     companion object {
 
-        var BASE_URL = "https://aapppp.gorex.co/"
+        var BASE_URL = "https://app.gorex.co/"
 
         fun create() : ApiInterface {
 
