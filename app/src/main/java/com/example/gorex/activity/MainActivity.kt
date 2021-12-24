@@ -41,11 +41,8 @@ class MainActivity : AppCompatActivity() {
 
                         if(response?.body() != null && response.body()!!.data != null)
                         {
-
+                            if(response.body()!!.data.size>0)
                             CommonFunction.saveToken(applicationContext, response.body()!!.data.get(0).Token)
-                            // CommonFunction.saveName(applicationContext, response.body()!!.data.first_name+" "+response.body()!!.data.last_name)
-
-                            overridePendingTransition(0,0)
 
                             val intent = Intent(applicationContext , Navigation::class.java)
                             startActivity(intent)

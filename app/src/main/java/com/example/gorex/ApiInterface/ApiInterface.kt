@@ -1,11 +1,11 @@
 package com.example.gorex.ApiInterface
 
+import com.example.gorex.Response.AddVehicleResponse
 import com.example.gorex.Response.LoginResponse
+import okhttp3.MultipartBody
+import okhttp3.RequestBody
 import retrofit2.Call
-import retrofit2.http.Field
-import retrofit2.http.FormUrlEncoded
-import retrofit2.http.Header
-import retrofit2.http.POST
+import retrofit2.http.*
 
 interface ApiInterface {
     @FormUrlEncoded
@@ -14,18 +14,20 @@ interface ApiInterface {
                          @Field("password") password: String) : Call<LoginResponse>
 
     @FormUrlEncoded
-    @POST("register")
-    fun getRegisterResponse(@Field("first_name") fName: String,@Field("last_name") LName: String,@Field("email") email: String,
-                            @Field("mobile_number") mobile: String,
-                         @Field("password") password: String,
-                         @Field("c_password") Cpassword: String,
-                         @Field("role") role: String,
-                         @Field("about") about: String,
-                         @Field("city") city: String,
-                         @Field("service_therapist_provider") provider: String,
-                         @Field("therapist_focus") focus: String,
-                         @Field("type_of_doctor") doctor: String,
-                         @Field("status_id") status: Int,@Field("introduction") introduction: String,@Field("education") education: String,) : Call<String>
+    @POST("autohub/service-provider/vehicle-management/customer-vehicle")
+    fun addVehicle(@Header("Authorization") header: String,@Field("vehicle_brand") vehicleBrand: String, @Field("vehicle_model") vehicleModel: String, @Field("vehicle_Type") vehicleType: String,
+                   @Field("year") years: String,@Field("number_plate") nPlate: String,@Field("engine_chesis_number") engineNumber: String) : Call<AddVehicleResponse>
+
+    @Multipart //@Part("picture\"; filename=\"pp.png") RequestBody file
+    @POST("autohub/customer/profile")
+    fun userRegisterResponse(@Part("user_type") user_type: RequestBody,
+                             @Part("name") name: RequestBody, @Part("email") email: RequestBody,
+                             @Part("password") password: RequestBody,
+                             @Part("contact_number") CNumber: RequestBody,
+                             @Part("address") address: RequestBody,
+                             @Part("image") image: MultipartBody.Part,
+                             @Part("first_name") fName: RequestBody,
+                             @Part("last_name") LName: RequestBody) : Call<String>
 
     @FormUrlEncoded
     @POST("package")
