@@ -2,6 +2,7 @@ package com.example.gorex.ApiInterface
 
 import com.example.gorex.Response.AddVehicleResponse
 import com.example.gorex.Response.LoginResponse
+import com.example.gorex.Response.SignUpResponse
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import retrofit2.Call
@@ -20,14 +21,16 @@ interface ApiInterface {
 
     @Multipart //@Part("picture\"; filename=\"pp.png") RequestBody file
     @POST("autohub/customer/profile")
-    fun userRegisterResponse(@Part("user_type") user_type: RequestBody,
-                             @Part("name") name: RequestBody, @Part("email") email: RequestBody,
+    fun userRegisterResponse(@Header("Authorization") header: String,@Part("user_type") user_type: RequestBody,
+                             @Part("name") name: RequestBody,
+                             @Part("email") email: RequestBody,
                              @Part("password") password: RequestBody,
                              @Part("contact_number") CNumber: RequestBody,
                              @Part("address") address: RequestBody,
-                             @Part("image") image: MultipartBody.Part,
                              @Part("first_name") fName: RequestBody,
-                             @Part("last_name") LName: RequestBody) : Call<String>
+                             @Part("last_name") LName: RequestBody) : Call<SignUpResponse>
+//    @Part("image") image: RequestBody,//MultipartBody.Part
+
 
     @FormUrlEncoded
     @POST("package")

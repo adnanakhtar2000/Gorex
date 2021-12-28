@@ -15,6 +15,7 @@ import com.example.gorex.ApiClient.ApiClient
 import com.example.gorex.ApiInterface.ApiInterface
 import com.example.gorex.CommonFunction
 import com.example.gorex.Response.AddVehicleResponse
+import com.example.gorex.Response.SignUpResponse
 import com.example.gorex.databinding.ActivitySignUpBinding
 import okhttp3.MediaType
 import okhttp3.MultipartBody
@@ -46,8 +47,8 @@ class Sign_up : AppCompatActivity() {
 
             if (namevalidation() && lastname_validation() && mobile_number_validation() && email_validation() && password_validation() && confrim_password_validation()  ) {
                 //val inputStream = contentResolver.openInputStream(Uri.fromFile(file))
-                val requestFile = RequestBody.create(MediaType.parse("image/jpeg"), file)
-                body = MultipartBody.Part.createFormData("image", file!!.name, requestFile)
+               // val requestFile = RequestBody.create(MediaType.parse("image/jpeg"), file)
+               // body = MultipartBody.Part.createFormData("image", file!!.name, requestFile)
                 val userType = RequestBody.create(MediaType.parse("text/plain"), "1")
                 val firstName = RequestBody.create(MediaType.parse("text/plain"), signUpBinding.firstName1.text.toString())
                 val lastName = RequestBody.create(MediaType.parse("text/plain"), signUpBinding.lastName1.text.toString())
@@ -56,16 +57,16 @@ class Sign_up : AppCompatActivity() {
                 val address = RequestBody.create(MediaType.parse("text/plain"), signUpBinding.addressEditText.text.toString())
                 val password = RequestBody.create(MediaType.parse("text/plain"), signUpBinding.signupPassword.text.toString())
                 val email = RequestBody.create(MediaType.parse("text/plain"), signUpBinding.email1.text.toString())
-                val addVehicleResponse = apiInterface.userRegisterResponse(userType,name,email,password,contact,address,body,firstName,lastName)
-                addVehicleResponse.enqueue( object : Callback<String> {
-                    override fun onResponse(call: Call<String>?, response: Response<String>?) {
+                val addVehicleResponse = apiInterface.userRegisterResponse(CommonFunction.getToken(applicationContext),userType,name,email,password,contact,address,firstName,lastName)
+                addVehicleResponse.enqueue( object : Callback<SignUpResponse> {
+                    override fun onResponse(call: Call<SignUpResponse>?, response: Response<SignUpResponse>?) {
 
                         if(response?.body() != null) {
                             Toast.makeText(applicationContext,response.body().toString(), Toast.LENGTH_LONG).show()
                         }
                     }
 
-                    override fun onFailure(call: Call<String>?, t: Throwable?) {
+                    override fun onFailure(call: Call<SignUpResponse>?, t: Throwable?) {
                         Toast.makeText(applicationContext,"Error...", Toast.LENGTH_LONG).show()
                     }
                 })
